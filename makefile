@@ -30,7 +30,7 @@ leak:
 	codesign -s - --entitlements bin/tmp.entitlements -f ./bin/sketchybar
 	leaks -atExit -- ./bin/sketchybar
 
-x86: CFLAGS+=-target x86_64-apple-macos10.13
+#x86: CFLAGS+=-target x86_64-apple-macos10.13
 x86: $(ODIR)/sketchybar
 
 arm64: CFLAGS+=-target arm64-apple-macos11
